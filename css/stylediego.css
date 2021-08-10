@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    
+}
+
+body{
+    background-image: url('../img/fondodiego\ \(1\).jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 738px;
+}
+h1{
+    color: wheat;
+    text-align: center;
+    font-size: 2rem;
+    font-family: monospace;
+    margin-top: 20px;
+    text-transform:uppercase;
+    animation: infinite 3s titulo ;
+    text-decoration: underline ;
+}
+@keyframes titulo{
+    20%{opacity: 0%;}
+    50%{opacity: 60%;}
+}
+
+h3{
+    color: yellow;
+    text-align: left;
+    font-size: 1.2rem;
+    font-family: 'Palette Mosaic', cursive;
+    margin-top: 20px;
+    animation: normal 8s titulo2;
+    margin-left: 20px;
+}
+@keyframes titulo2{
+    0% {opacity: 0%;}
+    40%{opacity: 0%;
+    }
+    70%{opacity: 80%;}
+}
+
+h2{
+    color:green;
+    text-align: left;
+    font-size: 1rem;
+    font-family: monospace;
+    margin-left: 20px;
+    margin-top: 20px;
+    animation: normal 12s titulo3;
+}
+
+@keyframes titulo3{
+    0% {opacity: 0%;}
+    50%{opacity: 0%;
+    }
+    70%{opacity: 80%;}
+}
+section{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 60px;
+    margin-right: 60px;
+    animation: normal 20s fotos;
+}
+
+@keyframes fotos{
+    0% {opacity: 0%;}
+    30%{opacity: 0%;}
+    40%{opacity: 60%;
+    }
+    50%{opacity: 100%;}
+}
+
+img{
+    width: 200px;
+    height: 160px;
+    border-radius: 20%;
+ 
+}
+img:hover{
+    transform:scale(2,2);
+    transition: transform 1s;
+}
